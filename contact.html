@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Portfolio Site</title>
+
+        <link rel = "stylesheet" href = "Stylesheet1.css">
+    </head>
+
+    <div id="one">
+        <img id = "playButton" src = "Assets/musicon.svg" alt = "Music Button">
+        <audio id="playAudio" src="Assets/8bit3.mp3" type="audio/mp3"></audio>
+        <p id = "songname">Twenty One Pilots - Holding Onto You (8-bit)</p>
+    </div>
+
+    <body>
+        <div class = "navbar brackets">
+            <a href = "index.html">HOME</a>
+            <a href = "whatido.html">WHAT I DO</a>
+            <a href = "examples.html">EXAMPLES</a>
+            <a href = "aboutme.html">ABOUT ME</a>
+            <a class = "active">CONTACT</a>
+        </div>
+    <div class = "row">
+        <div class = "column4">
+            <div class = "socials2">
+                <img src = "Assets/facebook.svg">
+                <img src = "Assets/github.svg">
+                <img src = "Assets/instagram.svg"> 
+                <img src = "Assets/youtube.svg">
+                <img src = "Assets/twitter.svg">
+                <img src = "Assets/ao3.svg">
+            </div>
+            <div class = "frame">
+                <img src = "Assets/border.png" width = "480px" class = "behind">
+                <img src = "Assets/Contactart.png" width = "40%" class = "front">
+                <h1 id = "move">WANNA GET IN TOUCH?</h1>
+            </div>
+        </div>
+        <div class = "column5">
+            <h2 style = "font-size: 90px;">CONTACT ME!</h2>
+            <div class = "square">
+                <form action="/action_page.php">
+                    <label>Name:</label>
+                    <br><input type = "text" placeholder = "Enter your name" style = "width: 400px;"><br>
+                    <label>Email:</label>
+                    <br><input type = "email" placeholder = "Enter your email" style = "width: 400px;"><br>
+                    <label>Send me a message:</label>
+                    <br><textarea placeholder = "Message goes here..." style = "max-width: 350px; max-height: 350px; max-height: 130px;"></textarea><br>
+                </form>
+                <button id = "submit">Submit</button>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class = "contacts">
+        @leewen.lumba@gmail.com,
+        +971 50 845 3563
+    </div>
+
+    </body>
+    <script src = "javascript.js"></script>
+</html>

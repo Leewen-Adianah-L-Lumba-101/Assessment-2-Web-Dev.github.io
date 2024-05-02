@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Portfolio Site</title>
+
+        <link rel = "stylesheet" href = "Stylesheet1.css">
+    </head>
+
+    <button onclick="topFunction()" id = "top"><img src = "Assets/Arrow2.svg"></button>
+
+    <div id="one">
+        <img id = "playButton" src = "Assets/musicon.svg" alt = "Music Button">
+        <audio id="playAudio" src="Assets/8bit2.mp3" type="audio/mp3"></audio>
+        <p id = "songname">Gorillaz - 19-2000 (8-bit cover)</style>
+    </div>
+    
+    <body style = "overflow-y: scroll; overflow-x: hidden;">
+        <div class = "navbar brackets" style = "position:absolute;">
+            <a href = "index.html">HOME</a>
+            <a href = "whatido.html">WHAT I DO</a>
+            <a class = "active">EXAMPLES</a>
+            <a href = "aboutme.html">ABOUT ME</a>
+            <a href = "contact.html">CONTACT</a>
+        </div>
+
+        <!--Example for game showcase-->
+        <div class = "gamedev">
+            <section class = "slideshow">
+                <div class = "slides">
+                    <!--Thumbnail pic-->
+                    <img src = "Assets/gameshowcase/Bitsypic1.gif" width = "600" height = "600"
+                    onclick="currentSlide(1)" alt = "Where Home Is">
+                </div>
+
+                <div class = "slides">
+                    <!--Thumbnail pic 2-->
+                    <img src = "Assets/gameshowcase/Bitsypic2.gif" width = "600" height = "600"
+                    onclick="currentSlide(2)" alt = "Where Home Is">
+                </div>
+
+                <div class = "slides">
+                    <!--Showcase of a script for a fictional story-->
+                    <img src = "Assets/gameshowcase/Bitsypic3.gif" width = "600" height = "600"
+                    onclick="currentSlide(3)" alt = "Where Home Is">
+                </div>
+
+                <div class = "slides">
+                    <!--Gameplay video from Bitsy game-->
+                    <video src = "Assets/gameshowcase/BitsyGameplay.mp4" width = "600" height = "600" autoplay loop controls
+                    onclick = "currentSlide(4)" alt = "Where Home Is"></video>
+                </div>
+
+                <!--Icons for Previous and Next Button, function plusSlides which allows to move back and forth content are called from js-->
+                <img class = "prev" src = "Assets/prev.svg" onclick = "plusSlides(-1)">
+                <img class = "next" src = "Assets/next.svg" onclick = "plusSlides(+1)">
+
+                <!--This section makes the gallery slideshow responsive, by making desired thumbnails clickable.-->
+                <div class = "menu">
+                    <div class = "options">
+                        <img class="demo" src = "Assets/gameshowcase/Bitsypic1.gif" style="width:100%" onclick="currentSlide(1)" alt= "Thumb1">
+                    </div>
+
+                    <div class = "options">
+                        <img class="demo" src = "Assets/gameshowcase/Bitsypic2.gif" style="width:100%" onclick="currentSlide(2)" alt= "Thumb2">
+                    </div>
+
+                    <div class = "options">
+                        <img class="demo" src = "Assets/gameshowcase/Bitsypic3.gif" style="width:100%" onclick="currentSlide(3)" alt= "Thumb3">
+                    </div>
+
+                    <div class = "options">
+                        <img class="demo" src = "Assets/gameshowcase/BitsyThumbnail.jpg" style="width:96%" onclick="currentSlide(4)" alt= "Gameplay">
+                    </div>                    
+                </div>
+            </section>
+            <div class = "column3">
+                <h2>WHERE HOME IS</h2>
+                <p style = "max-width: 400px;"> An atmospheric, dimly lit, colour heavy point-and-click styled 8-Bit game. With a dialogue
+                    driven story to tell; a harsh reflection of childhood yearning and antique memories. The game is meant as a
+                    showcase of escapism and self-inflicted punishment, where a dull unaccomplished adult life can lead one unhealthily 
+                    clinging to the warm past.
+                </p>
+                <!--Embedded links leads the person to the neccesssary links.-->
+                <p>All art was made with <a href = "https://www.pixilart.com/draw#">Pixilart.</a></p>
+                <p>Art converted into tiles for each room using <a href = "https://ruin.itch.io/pixsy">Pixsy.</a></p>
+                <p>Music and sprites all made within the online engine <a href = "https://www.bitsy.org/">Bitsy.</a></p>
+
+                <a href = "https://marshlandbiomes.itch.io/" id = "button">Check out my itch.io page!</a>
+            </div>
+        </div>
+
+        <!--Art examples-->
+        <div class = "artbanner"><h1>ARTWORKS</h1></div>
+        <div class = "art">
+            <div class = "art2">
+                <img src = "Assets/artexamples/coverbook.jpg" alt = "Cover for 11th Grade Journal" title = "Done with Acrylics">
+                <img src = "Assets/artexamples/Journal Scans_000.png" alt = "Walchensee Winter Study" title = "Done with Acrylics">
+                <img src = "Assets/artexamples/Journal Scans_001.png" alt = "Scrapbook w/ Annotation" title = "Done with Mix Media">
+                <img src = "Assets/artexamples/Recorder.jpg" alt = "Recorder in Colour Pencils" title = "Done with Colour Pencils">
+            </div>
+            
+            <div class = "art2">
+                <img src = "Assets/artexamples/stilllife.jpg" alt = "Artist Recreation Pieter Claesz" title = "Done with Acrylics">
+                <img src = "Assets/artexamples/snowbamboo.jpg" alt = "Snow Bamboo Forest" title = "Done with Acrylics">
+                <img src = "Assets/artexamples/originalpiece.jpg" alt = "Original Background Piece" title = "Done with Acrylics">
+                <img src = "Assets/artexamples/Journal Scans_003.png" alt = "Sketches of Various Faces" title = "Done with Marker Pens">
+            </div>
+            <div class = "art2">                
+                <img src = "Assets/artexamples/Journal Scans_002.png" alt = "Study of People" title = "Done with Mix Media">
+                <img src = "Assets/artexamples/random.jpg" alt = "Impressionism on MS Paint" title = "Done with Ms Paint">                
+                <img src = "Assets/artexamples/Mockconcept.jpeg" alt = "Mock Exam Concept" title = "Done with Ibis Paint X">
+                <img src = "Assets/artexamples/Poppy.png" alt = "Original Character" title = "Done with Ibis Paint X">
+            </div>
+            <div class = "art2">
+                <img src = "Assets/artexamples/Fanart.jpg" alt = "Anime Style study ft. Ganyu" title = "Done with Ibis Paint X">
+                <img src = "Assets/artexamples/CharacterDesign.jpeg" alt = "Character Concept Horror" title = "Done with Ms Paint">
+                <img src = "Assets/artexamples/Asirpa.png" alt = "Anime Style 2 ft. Asirpa" title = "Done with Ibis Paint X">
+                <img src = "Assets/artexamples/Study.jpg" alt = "Scene Study from Inglourious Basterds" title = "Done with Ibis Paint X">
+                <img src = "Assets/artexamples/Character Concept.jpg" alt = "Character Concept Xerxes" title = "Done with Ibis Paint X">
+            </div>
+        </div>
+
+        <!--Collective examples for programs and literary works-->
+        <div class = "otherwork">
+            <h1>CODING AND LITERARY WORKS</h1>
+            <p>If you'd like to check the remaining areas of my portfolio, they're available on these websites!</p>
+
+            <div class = "socials">
+                <a href = "https://github.com/Leewen-Adianah-L-Lumba-101"><img src = "Assets/github.png" width = "50" height = "50"></a>
+                <a href = "#linktowriting"><img src = "Assets/ao3.svg" width = "50" height = "50"></a>
+            </div>
+        </div>
+    </body>
+    <script src = "javascript.js"></script>
+</html>

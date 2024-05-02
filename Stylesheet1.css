@@ -1,0 +1,552 @@
+/* Font imports: Lato, Francois One and Pixelfy */ 
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+/* Font import: Font from local files, Retron2000 */
+@font-face {
+    font-family: 'Retron2000';
+    src: url('Retron2000.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Styling HTML tags */
+body {
+    margin-top: 80px;
+    overflow: hidden;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(127,127,127,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    position: relative;
+    z-index: 6;
+    color: #8a1226;
+}
+
+h1 {
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 10px;
+}
+
+h2 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 45px;
+}
+
+/* Classes for index.html */
+.active {
+    font-style: bold;
+}
+
+.column {
+    animation: fadein 2.5s;
+    display: inline-block;
+    padding: 20px 20px;
+    margin-left: 345px;
+}
+
+.column2 {
+    animation: fadein 2.5s;
+    float: left;
+    padding: 95px 30px;
+    margin-left: 380px;
+}
+
+.name {
+    float: right;
+    margin-top: 450px;
+    margin-left: 90px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 64px;
+}
+
+.labels {
+    display: inline-block;
+    margin-left: +12px;
+    text-align: right;
+    color: #343849;
+}
+
+.text {
+    border-right: 5px, solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s,
+        cursor .4s step-end infinite alternate;
+}
+
+/* Ids for index.html */
+#heading {
+    font-family: 'Lato', sans-serif; 
+    font-size: 16px; 
+    margin-top: +10px;
+}
+
+#one {
+    margin-top: -56px;
+    margin-left: 15px;
+}
+
+#songname {
+    margin-top: -35px; 
+    margin-left: 50px;
+    color: rgb(203, 200, 200);
+}
+
+#arrow {
+    animation: fadein 0.3s;
+    position: relative; 
+    transform: translateX(-150px) translateY(+50px);
+    z-index: 6;
+}
+
+#playButton:hover {
+    cursor: pointer;
+    filter: blur(1px);
+}
+
+#speedpaint {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-300px) translateX(-25%);
+    filter: drop-shadow(5px 5px 20px black);
+    z-index: 1;
+}
+
+#icon1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(+80%) translateX(+150%);
+    z-index: 2;
+}
+
+/* Reusable navbar settings for index.html, examples.html and contact.html*/
+.navbar {
+    position: fixed;
+    margin-left: 260px;
+    border-radius: 20px;
+    border-bottom-right-radius: 20px;  
+    overflow: hidden;
+    z-index: 3;
+}
+
+.navbar a {
+    background-color: #23252B;
+    color: #7F7F7F;
+    float: left;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color:#ddd8d6;
+    font-weight: bold;
+}
+
+
+/* Added classes for examples.html */
+.slideshow {
+    margin-left: 248px;
+    margin-top: 40px;
+    height: 600px;
+    width: 600px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.slides {
+    display: none;
+}
+
+.prev, .next {
+    filter: invert(100%);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    animation: fadein 0.2s;
+    background-color:rgb(22, 22, 24, 0.5);
+}
+
+.demo {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.active,
+.demo:hover {
+    animation: fadein2 0.5s;
+    opacity: 1;
+}
+
+.menu {
+    margin-top: -5px;
+    position: relative;
+    align-items: center;
+    background-color: rgb(22, 22, 24);
+}
+
+.menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.options {
+    margin-left: 42px;
+    float: left;
+    width: 16%;
+}
+
+.column3 {
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+}
+
+.gamedev {
+    display: flex;
+}
+
+.artbanner {
+    background-image: url("Assets/artexamples/artistrecreation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: white;
+
+    padding: 80px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin-top: +200px;
+    left: 50%;
+    display: flexbox;
+}
+
+.art {
+    margin-left: +20px;
+    margin-right: +10px;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.art2 {
+    margin-top: +20px;
+    -ms-flex: 24%;
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+}
+
+.art2 img {
+    transition: 0.3s;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.art2 img:hover {
+    transition: 0.3s;
+    padding: +2px;
+    width: 110%;
+}
+
+.otherwork {
+    background-color:rgb(38, 41, 51);
+    color: #9a9da1;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.socials {
+    align-items: center;
+}
+
+.socials a {
+    padding: 20px, 20px;
+    margin-left: 20px;
+}
+
+
+/* Bonus Ids for examples.html*/
+#button {
+    margin-top: +10px;
+    display: inline-block;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(38, 41, 51);
+    color: rgb(233, 209, 209);
+    text-decoration: none;
+}
+
+#button:hover {
+    animation: fadein2 0.3s;
+    background-color: rgb(57, 68, 75);
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+#button:active {
+    animation: fadein2 0.3s;
+    background-color: rgb(21, 21, 23);
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+#top {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    background-color:rgb(71, 74, 85);
+    color: white;
+
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 20px;
+    padding: 25px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#top:hover {
+    background-color:rgb(41, 49, 72);
+    color: rgb(129, 109, 216);
+}
+
+/* Added Classes for contact.html*/
+.row {
+    animation: fadein 0.6s;
+}
+
+.socials2 {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    transform: translateX(+750px);
+    transition: all 0.5s;
+}
+
+.socials2 img {
+    padding: 10px;
+    width: 25px;
+    z-index: 4;
+}
+
+.socials2 img:hover {
+    transform: scale(1.15,1.15);
+    filter: brightness(1.75);
+    transition: 0.3s;
+}
+
+.column4 {
+    margin-left: 160px;
+    margin-top: 50px;
+    float: left;
+}
+
+.column5 {
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin-left: +260px;
+    position: relative;
+    z-index: 2;
+}
+
+.frame {
+    text-align: center;
+    overflow: hidden;
+}
+
+.behind {
+    position: relative;
+    filter: hue-rotate(10deg);
+    animation: spin 30s infinite linear;
+    z-index: 0;
+}
+
+.front {
+    margin-left: -300px;
+    margin-top: auto;
+    position: absolute;
+    transform: translateX(-10px) translateY(-40px);
+    z-index: 1;
+    animation: float2 10s infinite;
+}
+
+.square {
+    margin-top: -90px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.contacts {
+    position: absolute;
+    margin-left: +1070px;
+    margin-top: +600px;
+    font-size: 18px;
+}
+
+input { 
+    background-color:#e4d6f9;
+    color:#23252B;
+    padding: 10px;
+    border-color: rgb(64, 64, 64);
+    border-radius: 30px;
+}
+
+textarea { 
+    background-color:#e4d6f9;
+    color: #1e1515;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* Ids for contact.html*/
+#move {
+    text-align: center;
+    margin-top: -150px;
+    max-width: 25px;
+    line-height: 50px;
+    animation: float 3s infinite;
+}
+
+#submit {
+    background-color:#e4d6f9;
+    color:#23252B;
+    padding: 10px;
+    border-color: rgb(64, 64, 64);
+    border-radius: 30px;
+}
+
+/* Bracket animations for navigation menu*/
+div.brackets a:before, div.brackets a:after {
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.5s;
+}
+
+/* After the initial styling for the left and right brackets, the brackets on either side are given properties-- */
+/* such as, their positions on either side of the options in the navigation menu. */
+div.brackets a:before {
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after {
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+/* The before and after brackets = the left and right brackets.*/
+div.brackets a:hover:before, div.brackets a:hover:after {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+/* Animation formattings, this is the typewriter animation used on index.html*/
+@keyframes cursor {
+    50% { border-color: transparent };
+}
+
+@keyframes typing {
+    from { width: 0};
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein2 {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg); 
+    }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(+10px);
+	}
+	100% {
+		transform: translatey(0px);
+    }
+}
